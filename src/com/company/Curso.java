@@ -72,8 +72,10 @@ public class Curso {
 
         if (listaAlumnos.size() < cupoMaximo) {
             listaAlumnos.add(unAlumno);
-            System.out.println("Alumno Agregado");
+
+
             return true;
+
         } else {
             System.out.println("Sin cupo");
             return false;
@@ -92,5 +94,8 @@ public class Curso {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Curso: " + nombre + " " +"Codigo: " + codCurso +" " +"Cupo Maximo: " +  cupoMaximo;
+    }
 }

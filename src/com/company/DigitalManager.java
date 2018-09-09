@@ -19,7 +19,7 @@ public class DigitalManager {
         Curso curso = new Curso(nombre, codigoCurso, cupoMaximoDealumnos);
 
         listaCursos.add(curso);
-        System.out.println("Curso Cargado");
+        System.out.println("Curso Cargado " + curso);
 
 
 
@@ -38,7 +38,7 @@ public class DigitalManager {
              if (cursoEnCuestion.getCodCurso() == codigoCurso){
 
                  listaCursos.remove(i);
-                 System.out.println("CURSO DADO DE BAJA");
+                 System.out.println("CURSO DADO DE BAJA " + cursoEnCuestion);
                  break;
             }
 
@@ -53,7 +53,8 @@ public class DigitalManager {
         Profesor profesorAdjunto = new ProfesorAdjunto(nombre,apellido,0,codigoProfesor,cantidadDeHoras);
 
         listaProfesores.add(profesorAdjunto);
-        System.out.println("Profesor Adjunto Cagado");
+        System.out.println("Profesor Adjunto Cagado: "+ profesorAdjunto);
+
 
 
 
@@ -67,7 +68,8 @@ public class DigitalManager {
         Profesor profesorTitular = new ProfesorTitular(nombre,apellido,0,codigoProfesor,especialidad);
 
         listaProfesores.add(profesorTitular);
-        System.out.println("Profesor Titular Agregado");
+        System.out.println("Profesor Titular Agregado: "+ profesorTitular);
+
     }
 
     //METODO DAR DE BAJA PROFESOR
@@ -91,6 +93,7 @@ public class DigitalManager {
 
         listaAlumnos.add(alumno);
         System.out.println("Alumno Cargado");
+        System.out.println(alumno);
     }
 
     //METODO INSCRIBIR ALUMNO
@@ -124,7 +127,8 @@ public class DigitalManager {
 
 
                if (curso.agregarAlumno(alumno) == true){
-                   System.out.println("Alumno Inscripto");
+                   System.out.println("Alumno Inscripto: "+ alumno);
+
                    break;
                }else{
                    break;
@@ -180,6 +184,8 @@ public class DigitalManager {
                 curso.setProfesorTitular((ProfesorTitular) profesorTitular);
                 curso.setProfesorAdjunto((ProfesorAdjunto) profesorAdjunto);
                 System.out.println("Profesores Añadidos");
+                System.out.println(profesorTitular);
+                System.out.println(profesorTitular);
 
 
 

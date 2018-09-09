@@ -22,4 +22,9 @@ public class ProfesorAdjunto extends Profesor {
 
 
     }
+
+    @Override
+    public String toString() {
+        return "Profesor Adjunto: "+ getNombre() + " " + getApellido() + " " + "Codigo: " + getCodProfesor() + " Horas Disponibles: " + getHorasConsulta();
+    }
 }
