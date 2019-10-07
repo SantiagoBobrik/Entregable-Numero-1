@@ -1,2 +1,2 @@
 # Entregable-Numero-1
-Sistema de cursos/alumnos Digital House
+Sistema de cursos/alumnos con POO, aplicacion de consola.
